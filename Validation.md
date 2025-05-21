@@ -36,3 +36,23 @@ aws s3 ls
 curl https://api.stripe.com/v1/account \
   -u sk_live_3WUO1sYdZt*********:
 ``` 
+
+## NPM 
+
+```
+curl -H "Authorization: Bearer npm_FJcq8KxETlBAyo*********RJb" https://registry.npmjs.org/-/whoami
+``` 
+
+### Cloudflare 
+
+```curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+  -H "Authorization: Bearer O4Vh3SxvAXS********" \
+  -H "Content-Type: application/json"
+```
+
+### Github token
+
+```curl -H "Authorization: token 226393cc045ee0796b9e62c9d4fe5dc20db7f868" \
+     -H "Accept: application/vnd.github+json" \
+     https://api.github.com/user
+``` 
